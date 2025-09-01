@@ -112,3 +112,10 @@ NDTA631/
 ## Contributors
 
 Full Names & Student Numbers of Group Members (6–7 students)
+Keabetswe	 Moloi	202112865
+Thakasa 	Gumede	202204383
+Akanyang	 Maine	202213306
+Princess 	Tau	202109551
+Karabelo 	Nthoroane	202328762
+Tshepang	Matamela	202325467
+Amukelani	Rikhotso	202212514
