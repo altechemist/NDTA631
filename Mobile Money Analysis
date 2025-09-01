@@ -1,11 +1,6 @@
 Mobile Money Analysis/
-├── notebooks/analysis.py          # Main analysis script
-├── outputs/                       # All generated outputs
 ├── WB_FINDEX_FIN13BM.csv         # Sent money dataset
 ├── WB_FINDEX_FIN13CM.csv         # Withdrew money dataset
-├── requirements.txt               # Python dependencies
-├── README.md                     # Comprehensive documentation
-└── mobile_money.db               # SQLite database
 
 # NDTA631 - Data Analysis and Visualization
 import pandas as pd
