@@ -30,3 +30,23 @@ print('Saving results...')
 sent_stats.to_csv('../outputs/sent_money_stats.csv')
 withdrew_stats.to_csv('../outputs/withdrew_money_stats.csv')
 print('Analysis completed successfully!')
+
+# === ADVANCED NUMERICAL ANALYSIS ===
+print('\n=== ADVANCED NUMERICAL ANALYSIS ===')
+sent_values = sa_sent_clean['OBS_VALUE'].to_numpy()
+withdrew_values = sa_withdrew_clean['OBS_VALUE'].to_numpy()
+
+if len(sent_values) > 0 and len(withdrew_values) > 0:
+    sent_mean = np.mean(sent_values)
+    sent_median = np.median(sent_values)
+    sent_std = np.std(sent_values)
+    withdrew_mean = np.mean(withdrew_values)
+    withdrew_median = np.median(withdrew_values)
+    withdrew_std = np.std(withdrew_values)
+    
+    print(f'NumPy Statistics Summary:')
+    print(f'Sent Money - Mean: {sent_mean:.2f}%, Median: {sent_median:.2f}%, Std: {sent_std:.2f}')
+    print(f'Withdrew Money - Mean: {withdrew_mean:.2f}%, Median: {withdrew_median:.2f}%, Std: {withdrew_std:.2f}')
+else:
+    print('No valid data available for analysis')
+    sent_mean = withdrew_mean = sent_median = withdrew_median = sent_std = withdrew_std = 0
